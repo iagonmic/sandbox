@@ -11,9 +11,9 @@ The goal of this repository is to serve as a portfolio of my work in data scienc
 In this repository, various tools and libraries for data science are used, including but not limited to:
 
 - R
-- Tidyverse
-- Dplyr
-- Readr
+  - Tidyverse
+  - Dplyr
+  - Readr
 
 ## Contact
 
