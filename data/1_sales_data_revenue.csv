@@ -1,0 +1,11 @@
+OrderID,Product,Category,Quantity,Price,Date,Revenue
+1,Laptop,Electronics,1,1000,2023-01-10,1000
+2,Mouse,Accessories,5,20,2023-02-15,100
+3,Keyboard,Accessories,3,50,2023-03-20,150
+4,Monitor,Electronics,2,150,2023-04-25,300
+5,Printer,Electronics,1,200,2023-05-30,200
+6,Tablet,Electronics,2,300,2023-06-05,600
+7,Headphones,Accessories,4,30,2023-07-10,120
+8,Webcam,Accessories,2,50,2023-08-15,100
+9,Desk,Furniture,1,100,2023-09-20,100
+10,Chair,Furniture,1,200,2023-10-25,200
