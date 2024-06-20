@@ -1,0 +1,11 @@
+StudentID,Name,Math,Science,English,History,PhysicalEducation,total_mean,result,w_mean
+1,Alice,80,70,90,60,100,80,Aprovado,78.5
+2,Bob,90,85,80,70,95,84,Aprovado,81.75
+3,Charlie,85,80,70,65,90,78,Aprovado,75.25
+4,David,70,60,85,55,85,71,Aprovado,70.75
+5,Eve,60,55,75,80,80,70,Aprovado,70.75
+6,Frank,55,50,65,75,70,63,Aprovado,63.75
+7,Grace,95,90,95,85,60,85,Aprovado,88.25
+8,Hannah,40,45,50,60,75,54,Reprovado,52.25
+9,Ivy,50,65,60,45,65,57,Reprovado,55.5
+10,Jack,65,60,55,50,55,57,Reprovado,56.5
