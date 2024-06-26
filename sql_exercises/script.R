@@ -75,14 +75,21 @@ GROUP BY Customers.customer_id;
 
 # Write a series of queries to:
   
-# Update the status of all shipments to "Delivered" where the customer has placed more than two orders and the sum total of the order values is greater than 1000.
+# Update the status of all shipments to "Delivered" where the customer has placed more than one order.
 # Check which customers have had their shipping status updated.
 
-DBI::dbGetQuery(con,
-"UPDATE Shippings.status
-SET 'Pending' = 'Delivered'
-WHERE customer_id
+DBI::dbExecute(con,
+"UPDATE Shippings
+SET status = 'Delivered'
+WHERE customer_id IN
+(SELECT Orders.customer_id FROM Orders GROUP BY customer_id HAVING COUNT(Orders.order_id) > 1);
+")
 
+DBI::dbGetQuery(con,
+"SELECT Customers.customer_id, (Customers.first_name || ' ' || Customers.last_name) AS full_name, Shippings.status
+FROM Customers
+JOIN Shippings ON Customers.customer_id = Shippings.customer_id
+WHERE Shippings.status = 'Delivered'
 ")
 
 # Disconnecting from database
