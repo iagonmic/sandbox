@@ -14,6 +14,17 @@ In this repository, various tools and libraries for data science are used, inclu
   - Tidyverse
   - Dplyr
   - Readr
+- SQL
+  - R Libraries
+    - DBI (R Connection)
+    - RSQLite (Database Connection)
+  - SQL Statements
+    - SELECT
+    - JOIN
+    - GROUP BY
+    - ORDER BY
+    - HAVING
+    - COUNT
 
 ## Contact
 
