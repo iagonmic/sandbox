@@ -25,6 +25,7 @@ In this repository, various tools and libraries for data science are used, inclu
     - ORDER BY
     - HAVING
     - COUNT
+    - Many more...
 
 ## Contact
 
