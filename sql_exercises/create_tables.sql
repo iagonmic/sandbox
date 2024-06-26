@@ -13,6 +13,7 @@ order_id INTEGER PRIMARY KEY,
 item TEXT,
 amount INTEGER,
 customer_id INTEGER,
+order_date DATE,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
@@ -20,7 +21,7 @@ FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 CREATE TABLE Shippings(
 shipping_id INTEGER PRIMARY KEY,
 status TEXT,
-customer_id INTEGER
+customer_id INTEGER,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
@@ -32,15 +33,16 @@ INSERT INTO Customers(customer_id, first_name, last_name, age, country) VALUES(4
 INSERT INTO Customers(customer_id, first_name, last_name, age, country) VALUES(5, "Betty", "Doe", 28, "USA");
 
 -- Inserting values into table Orders
-INSERT INTO Orders (order_id, item, amount, customer_id) VALUES (1, 'Keyboard', 400, 4);
-INSERT INTO Orders (order_id, item, amount, customer_id) VALUES (2, 'Mouse', 300, 4);
-INSERT INTO Orders (order_id, item, amount, customer_id) VALUES (3, 'Monitor', 12000, 3);
-INSERT INTO Orders (order_id, item, amount, customer_id) VALUES (4, 'Keyboard', 400, 1);
-INSERT INTO Orders (order_id, item, amount, customer_id) VALUES (5, 'Mousepad', 250, 2);
+INSERT INTO Orders (order_id, item, amount, customer_id, order_date) VALUES (1, 'Keyboard', 400, 4, '2023-03-15');
+INSERT INTO Orders (order_id, item, amount, customer_id, order_date) VALUES (2, 'Mouse', 300, 4, '2023-07-22');
+INSERT INTO Orders (order_id, item, amount, customer_id, order_date) VALUES (3, 'Monitor', 12000, 3, '2023-01-30');
+INSERT INTO Orders (order_id, item, amount, customer_id, order_date) VALUES (4, 'Keyboard', 400, 1, '2023-10-05');
+INSERT INTO Orders (order_id, item, amount, customer_id, order_date) VALUES (5, 'Mousepad', 250, 2, '2023-12-18');
 
 -- Inserting values into table Shippings
-INSERT INTO Shippings (shipping_id, status, customer) VALUES (1, 'Pending', 2);
-INSERT INTO Shippings (shipping_id, status, customer) VALUES (2, 'Pending', 4);
-INSERT INTO Shippings (shipping_id, status, customer) VALUES (3, 'Delivered', 3);
-INSERT INTO Shippings (shipping_id, status, customer) VALUES (4, 'Pending', 5);
-INSERT INTO Shippings (shipping_id, status, customer) VALUES (5, 'Delivered', 1);
+INSERT INTO Shippings (shipping_id, status, customer_id) VALUES (1, 'Pending', 2);
+INSERT INTO Shippings (shipping_id, status, customer_id) VALUES (2, 'Pending', 4);
+INSERT INTO Shippings (shipping_id, status, customer_id) VALUES (3, 'Delivered', 3);
+INSERT INTO Shippings (shipping_id, status, customer_id) VALUES (4, 'Pending', 5);
+INSERT INTO Shippings (shipping_id, status, customer_id) VALUES (5, 'Delivered', 1);
+
