@@ -10,12 +10,15 @@ The goal of this repository is to serve as a portfolio of my work in data scienc
 
 In this repository, various tools and libraries for data science are used, including but not limited to:
 
+- Python
+  - Pandas
+  - Datetime
 - R
   - Tidyverse
   - Dplyr
-  - Readr
+  - Readr 
 - SQL
-  - R Libraries
+  - Libraries
     - DBI (R Connection)
     - RSQLite (Database Connection)
   - SQL Statements
