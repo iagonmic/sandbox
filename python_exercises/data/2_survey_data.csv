@@ -1,0 +1,11 @@
+RespondentID,Age,Gender,Income,Satisfaction
+1,25,Male,50000,5
+2,34,Female,60000,4
+3,45,Female,55000,3
+4,NA,Male,45000,2
+5,29,Female,NA,1
+6,22,Male,48000,5
+7,50,Female,70000,4
+8,61,Male,65000,3
+9,18,Female,30000,2
+10,35,Male,52000,1

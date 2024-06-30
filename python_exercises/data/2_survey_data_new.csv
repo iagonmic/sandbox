@@ -1,0 +1,11 @@
+,RespondentID,Age,Gender,Income,Satisfaction,Income_Category
+0,1,25.0,Male,50000.0,5,Medium
+1,2,34.0,Female,60000.0,4,Medium
+2,3,45.0,Female,55000.0,3,Medium
+3,4,,Male,45000.0,2,Medium
+4,5,29.0,Female,,1,High
+5,6,22.0,Male,48000.0,5,Medium
+6,7,50.0,Female,70000.0,4,High
+7,8,61.0,Male,65000.0,3,Medium
+8,9,18.0,Female,30000.0,2,Low
+9,10,35.0,Male,52000.0,1,Medium
