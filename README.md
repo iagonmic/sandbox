@@ -20,7 +20,8 @@ In this repository, various tools and libraries for data science are used, inclu
 - SQL
   - Libraries
     - DBI (R Connection)
-    - RSQLite (Database Connection)
+    - RSQLite (SQLite Database Connection)
+    - SQLite3 (Python Connection)
   - SQL Statements
     - SELECT
     - JOIN
